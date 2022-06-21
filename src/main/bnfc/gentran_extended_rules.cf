@@ -1,0 +1,9 @@
+
+GroundString.  Ground ::= StringLiteral ;
+token StringLiteral ( '"' ((char - ["\"\\"]) | ('\\' ["\"\\nt"]))* '"' );
+
+Eeq.         Exp1  ::= Ground "=" Ground;
+
+-- Comments:
+comment "//" ;
+comment "/*" "*/" ;
